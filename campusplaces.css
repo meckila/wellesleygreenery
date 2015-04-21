@@ -1,0 +1,137 @@
+
+/*
+Meckila Britt
+CS 220 Human Computer Interaction
+Name Passport
+Styling Sheet: Portrait Orientation
+*/
+
+.ui-page {
+
+	height: 568px;
+    background: transparent;
+    background-position: cover;	
+    background-repeat: no-repeat;
+    background-image: url("images/leaves.png");
+	display: block;
+}
+
+.innerbody {
+	padding-left: 3px;
+	padding-right: 5px;
+	margin: 0 auto;
+	margin-top: 10px;
+	overflow: scroll;
+	height: 540px;
+	width: 290px;
+}
+.content{
+	background: rgba(255, 255, 255, 0.9);
+	padding: 7px; 
+	padding-top: 2px;
+}
+.ui-footer {
+	width: 320px;
+}
+.ui-collapsible{
+	width: 275px;
+	margin: 0 auto;
+}
+.ui-collapsible-heading a{
+	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 2px;
+	color: #1FBF8F;
+}
+
+h1, h2, h4, p{
+	color: #023E2F;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-weight: 200;
+	letter-spacing: 1px;
+	text-align: center;
+}
+h1 {
+	letter-spacing: 4px;
+	color: #20473D;
+	font-weight: 400px;
+}
+h3{
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 20px;
+}
+
+h3, h5{
+	color: #3bcaa0;
+}
+h6{
+	font-size: 10px;
+}
+
+#back{
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: left;
+	margin-bottom: 0px;
+	color: #20473D;
+	font-size: 18px;
+	font-weight: 200;
+	background: rgba(255,255,255,0.8);
+
+}
+
+p{
+	font-size: 18px;
+	font-family: 'Halant', serif;
+	font-weight: 300;
+}
+
+a{
+	text-decoration: none;
+}
+#map-canvas {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto;
+}
+.ui-listview {
+	width: 275px;
+	margin: 0 auto;
+}
+
+#ghlist a{
+    font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: left;
+	font-size: 14px;
+	font-weight: 100px;
+}
+.ui-listview a {
+	font-size: 12px;
+    font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	text-align: left;
+}
+
+.images {
+	margin: 0 auto;
+	width: 265px;
+	
+}
+.images2 {
+	margin: 0 auto;
+	width: 260px;
+	margin-left: -10px;
+}

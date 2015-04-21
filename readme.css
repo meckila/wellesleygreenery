@@ -1,0 +1,72 @@
+/*
+Meckila Britt
+CS 220 Human Computer Interaction
+Campus Places
+Styling Sheet: Landscape Orientation
+*/
+
+body {
+	max-width: 1000px;
+	display: block;	
+	background-image: url("images/leaves3.png");
+	margin: 0px;
+	color: #20473D;
+}
+
+#content::-webkit-scrollbar {
+    width: 0em;
+}
+
+#content{
+	background: rgba(255, 255, 255, 0.9);
+	width: 70%;
+	height: 800px;
+	padding: 10px;
+	margin-top: 30px;
+	margin: 0 auto;
+	overflow-y: scroll; 
+}
+p {
+	font-family: 'Halant', serif;
+	font-weight: 300;
+}
+a, h1, h2, h3 {
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	color: #377455;
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	color: #02e6b7;
+}
+
+h2 {
+	text-align: center;
+	font-size: 30px;
+	color: #02e6b7;
+}
+h3 {
+	text-decoration: underline;
+	margin-bottom: 0px;
+	color: #2a615a;
+}
+ 
+a {
+	text-decoration: none;
+	color: #18cc9e;
+}
+
+p {
+	font-size: 18px;
+	margin-bottom: 0px;
+}
+#zip {
+	text-align: center;
+}
+

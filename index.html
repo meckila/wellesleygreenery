@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<title>Wellesley Greenery</title>
+		<link rel="stylesheet" href="campusplaces.css" media="screen and (orientation:portrait)">
+		<link rel="stylesheet" href="campusplaceslandscape.css" media="screen and (orientation:landscape)">  
+
+		<link href='http://fonts.googleapis.com/css?family=Halant:300|Lato:300,400' rel='stylesheet' type='text/css'>
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-webapp-status-bar-style" content="black">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script src="campusplaces.js"></script>
+	</head>
+
+	<body>
+		<!--Indesx-->
+		<div data-role="page" id="index"> 
+			<div class="innerbody">
+				<a href="index"><h1>Wellesley Greenery</h1></a>
+				<div class="content">
+					<a href ="#about"><h2>About</h2></a>
+					<a href ="#map"><h2>Map</h2></a>
+					<a href ="#greenhouses"><h2>Greenhouses</h2></a>
+					<a href ="#lake"><h2>Lake</h2></a>	
+					<a href ="#topiary"><h2>Topiary Bushes</h2></a>
+					
+				</div>		
+			</div>	
+		</div>
+		<!--ABOUT-->
+		<div data-role="page" id="about"> 
+			<div class="innerbody">
+				<a data-icon="back" data-rel="back" back-btn="true" id="back">Back</a>
+				<a href="index"><h1>Wellesley Greenery</h1></a>
+				<div class="content">
+				<h3>About</h3>
+				<p>
+					Hello! My name is Meckila and I am a sophomore Computer Science
+					major at Wellesley College. With a heavy workload, I often need
+					to relax. One of my favorite things to do is enjoy the greenery
+					around campus, whether it be by the lake or at the greenhouses.
+					I thought I'd share some of my favorite places with you!
+				</p>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" id="navfooter">
+				<ul>
+					<li><a href="#index"><h6>Menu</h6></a>
+					<li><a href="#map"><h6>Map</h6></a>
+					<li><a href="#about"><h6>About</h6></a>
+				</ul>
+			</div><!--End of nav-->
+			</div><!--End of footer-->
+		</div><!--End of page-->
+
+		<!--MAP-->
+		<div data-role="page" id="map"> 
+			<div class="innerbody">
+				<a data-icon="back" data-rel="back" back-btn="true" id="back">Back</a>
+				<a href="index"><h1>Wellesley Greenery</h1></a>
+				<div class="content">
+				<h3>Map</h3>
+					<p>Wellesley's green attractions can be found at the following hotspots!<br>
+					1. Lake Waban Shore<br>
+					2. Wellesley Greenhouses<br>
+					3. Topiary Bushes
+					</p>
+					<div id="map-canvas"></div>
+				
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" id="navfooter" data-theme="d">
+				<ul>
+					<li><a href="#index"><h6>Menu</h6></a>
+					<li><a href="#map"><h6>Map</h6></a>
+					<li><a href="#about"><h6>About</h6></a>
+				</ul>
+			</div><!--End of nav-->
+			</div><!--End of footer-->
+		</div><!--End of page-->
+
+		<!--GREENHOUSES-->
+		<div data-role="page" id="greenhouses"> 
+			<div class="innerbody">
+				<a data-icon="back" data-rel="back" back-btn="true" id="back">Back</a>
+				<a href="index"><h1>Wellesley Greenery</h1></a>
+				<div class="content">
+					<h3>Greenhouses</h3>	
+						<a href="#ghrooms"><h4>Greenhouse Rooms</h4></a>
+						<a href="#faveflora"><h4>Favorite Flora</h4></a>			
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" id="navfooter" data-theme="d">
+				<ul>
+					<li><a href="#index"><h6>Menu</h6></a>
+					<li><a href="#map"><h6>Map</h6></a>
+					<li><a href="#about"><h6>About</h6></a>
+				</ul>
+			</div><!--End of nav-->
+			</div><!--End of footer-->
+		</div><!--End of page-->
+							<!--Greenhouse Rooms-->
+							<div data-role="page" id="ghrooms"> 
+								<div class="innerbody">
+									<a data-icon="back" data-rel="back" back-btn="true" id="back">Back</a>
+									<a href="index"><h1>Wellesley Greenery</h1></a>
+									<div class="content">
+									<h3>Greenhouse Rooms</h3>
+									<p>
+										According to the Wellesley College website, there are sixteen interconnected greenhouses totaling 7200 feet. The flora and fauna in the greenhouses come from all over the world. I typically enjoy sitting in the bench in the Tropical House doing my homework. Check out some the houses below!
+									</p>
+									<div data-role="collapsible-set">
+								    <div data-role="collapsible">
+								            <h4 class="collapse-header">Desert</h4>
+								            <p>
+								            <img src="images/greenhouses/desert/desert1.jpg" class="images2">
+								        	</p>
+								    </div>
+								    <div data-role="collapsible">
+								            <h4 class="collapse-header">Tropical</h4>
+								            <p>
+								            <img src="images/greenhouses/tropical/tropical1.jpg" class="images2">
+								        	</p>
+								        	<img src="images/greenhouses/tropical/tropical2.jpg" class="images2">
+								        	</p>
+								        	<img src="images/greenhouses/tropical/tropical3.jpg" class="images2">
+								        	</p>
+								        	<img src="images/greenhouses/tropical/tropical4.jpg" class="images2">
+								        	</p>
+								        	<img src="images/greenhouses/tropical/tropical5.jpg" class="images2">
+								        	</p>
+								    </div>
+								    <div data-role="collapsible">
+								            <h4 class="collapse-header">Warm Temperate</h4>
+								        	<p>
+								            <img src="images/greenhouses/warmtemperate/warmtemp1.jpg" class="images2">
+								        	</p>
+								        	<p>
+								            <img src="images/greenhouses/warmtemperate/warmtemp2.jpg" class="images2">
+								        	</p>
+								        	<p>
+								            <img src="images/greenhouses/warmtemperate/warmtemp3.jpg" class="images2">
+								        	</p>
+								        	<p>
+								            <img src="images/greenhouses/warmtemperate/warmtemp4.jpg" class="images2">
+								        	</p>
+								        	<p>
+								            <img src="images/greenhouses/warmtemperate/warmtemp5.jpg" class="images2">
+								        	</p>
+								    </div>
+								    <div data-role="collapsible">
+								            <h4 class="collapse-header">Hydrophyte</h4>
+								            <p>
+								            <img src="images/greenhouses/hydrophyte/hydro1.jpg" class="images2">
+								        	</p>
+								        	<p>
+								            <img src="images/greenhouses/hydrophyte/hydro2.jpg" class="images2">
+								        	</p>
+								        	<p>
+								            <img src="images/greenhouses/hydrophyte/hydro3.jpg" class="images2">
+								        	</p>
+								    </div>
+								</div> <!-- collapsible-set -->
+
+									
+									</div>
+								</div>
+								<div data-role="footer" data-position="fixed">
+								<div data-role="navbar" id="navfooter" data-theme="d">
+									<ul>
+										<li><a href="#index"><h6>Menu</h6></a>
+										<li><a href="#map"><h6>Map</h6></a>
+										<li><a href="#about"><h6>About</h6></a>
+									</ul>
+								</div><!--End of nav-->
+								</div><!--End of footer-->
+							</div><!--End of page-->
+							<!--FAVE PLANTS-->
+							<div data-role="page" id="faveflora"> 
+								<div class="innerbody">
+									<a data-icon="back" data-rel="back" back-btn="true" id="back">Back</a>
+									<a href="index"><h1>Wellesley Greenery</h1></a>
+									<div class="content">
+									<h3>Favorite Flora</h3>
+									<p>
+										Though there are thousands of species in the greenhouse.
+										Here are a few I love spotting!
+									</p>
+									<ul data-role="listview" data-inset="true" id="favelist">
+								        <li><a href="http://en.wikipedia.org/wiki/Justicia_brandegeeana">
+        								<img src="images/faveflora/shrimpplant.jpg">
+    									<h4>Shrimp Plant</h4>
+    									</a>
+    									</li>
+
+								        <li><a href="http://en.wikipedia.org/wiki/Calliandra_brevipes">
+        								<img src="images/faveflora/powderpuff.jpg">
+    									<h4>Pink Powderpuff</h4>
+    									</a>
+    									</li>
+
+    									<li><a href="http://en.wikipedia.org/wiki/Couroupita_guianensis">
+        								<img src="images/faveflora/cannonballtree.jpg">
+    									<h4>Cannonball Tree</h4>
+    									</a>
+    									</li>
+
+    									<li><a href="http://en.wikipedia.org/wiki/Hibiscus">
+        								<img src="images/faveflora/hibiscus.jpg">
+    									<h4>Hibiscus</h4>
+    									</a>
+    									</li>
+								    </ul>
+									
+									</div>
+								</div>
+								<div data-role="footer" data-position="fixed">
+								<div data-role="navbar" id="navfooter" data-theme="d">
+									<ul>
+										<li><a href="#index"><h6>Menu</h6></a>
+										<li><a href="#map"><h6>Map</h6></a>
+										<li><a href="#about"><h6>About</h6></a>
+									</ul>
+								</div><!--End of nav-->
+								</div><!--End of footer-->
+							</div><!--End of page-->
+
+		<!--LAKE-->
+		<div data-role="page" id="lake"> 
+			<div class="innerbody">
+				<a data-icon="back" data-rel="back" back-btn="true" id="back">Back</a>
+				<a href="index"><h1>Wellesley Greenery</h1></a>
+				<div class="content">
+				<h3>Lake Waban</h3>
+				<p>
+					When the weather is nice, Lake Waban is wonderful to walk around!
+				</p>
+				<p>
+				<img src="images/lake/lake1.jpg" class="images">
+				</p>
+				<p>
+				<img src="images/lake/lake2.jpg" class="images">
+				</p>
+				<p>
+				<img src="images/lake/lake3.jpg" class="images">
+				</p>
+				<p>
+				<img src="images/lake/lake5.jpg" class="images">
+				</p>
+				<p>
+				<img src="images/lake/lake4.jpg" class="images">
+				</p>
+					
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" id="navfooter" data-theme="d">
+				<ul>
+					<li><a href="#index"><h6>Menu</h6></a>
+					<li><a href="#map"><h6>Map</h6></a>
+					<li><a href="#about"><h6>About</h6></a>
+				</ul>
+			</div><!--End of nav-->
+			</div><!--End of footer-->
+		</div><!--End of page-->
+
+		<!--TOPIARY-->
+		<div data-role="page" id="topiary"> 
+			<div class="innerbody">
+				<a data-icon="back" data-rel="back" back-btn="true" id="back">Back</a>
+				<a href="index"><h1>Wellesley Greenery</h1></a>
+				<div class="content">
+				<h3>Topiary Bushes</h3>
+				<p>
+					Though not technically owned by the College, the topiary bushes owned by
+					the Walter Hunnewell Arboretum are near Lake Waban. I love their shapes
+					and they are quite large when seen in person!
+				</p>
+				<p>
+				<img src="images/topiary/topiary1.jpg" class="images">
+				</p>
+				<p>
+				<img src="images/topiary/topiary2.jpg" class="images">
+				</p>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" id="navfooter" data-theme="d">
+				<ul>
+					<li><a href="#index"><h6>Menu</h6></a>
+					<li><a href="#map"><h6>Map</h6></a>
+					<li><a href="#about"><h6>About</h6></a>
+				</ul>
+			</div><!--End of nav-->
+			</div><!--End of footer-->
+		</div><!--End of page-->
+	</body>
+</html>
